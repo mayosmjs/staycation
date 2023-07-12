@@ -86,6 +86,7 @@ const ListingCard = ({
             "
             src={data.imageSrc}
             alt="Listing"
+            priority
           />
           <div className="
             absolute

@@ -3,6 +3,8 @@ import './globals.css'
 import { Nunito } from 'next/font/google'
 import RegisterModal from  './components/modals/RegisterModal'
 import LoginModal from './components/modals/LoginModal'
+import SearchModal from './components/modals/SearchModal'
+
 import RentModal from './components/modals/RentModal'
 import ToasterProvider from './providers/ToasterProvider'
 import Provider from './components/Provider'
@@ -23,6 +25,7 @@ export default async function RootLayout({ children }) {
         <RegisterModal/>
         <LoginModal/>
         <RentModal/>
+        <SearchModal/>
         <Navbar/>
         {children}
        </Provider>

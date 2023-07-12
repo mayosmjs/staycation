@@ -4,22 +4,17 @@ import { toast } from "react-hot-toast";
 import axios from "axios";
 import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
-
-// import { SafeReservation, SafeUser } from "@/app/types";
-
 import Heading from "../components/Heading";
 import Container from "../components/Container";
 import ListingCard from "../components/listings/ListingCard";
 
-const TripsClient = ({
+
+const ReservationsClient = ({
   reservations,
   currentUser
 }) => {
   const router = useRouter();
   const [deletingId, setDeletingId] = useState('');
-
-  const reserve = Array.from(reservations);
-
 
   const onCancel = useCallback((id) => {
     setDeletingId(id);
@@ -29,8 +24,8 @@ const TripsClient = ({
       toast.success('Reservation cancelled');
       router.refresh();
     })
-    .catch((error) => {
-      toast.error(error?.response?.data?.error)
+    .catch(() => {
+      toast.error('Something went wrong.')
     })
     .finally(() => {
       setDeletingId('');
@@ -39,17 +34,16 @@ const TripsClient = ({
 
   return (
     <Container>
-     
-     <div className="pt-32">
-     <Heading
-        title="Trips"
-        subtitle="Where you've been and where you're going"
+    <div className="pt-32">
+      <Heading
+        title="Reservations"
+        subtitle="Bookings on your properties"
       />
-     </div>
-
+      </div>
+      
       <div 
         className="
-          pt-24
+          mt-10
           grid 
           grid-cols-1 
           sm:grid-cols-2 
@@ -60,9 +54,7 @@ const TripsClient = ({
           gap-8
         "
       >
-
-
-        {reserve.map((reservation) => (
+        {reservations.map((reservation) => (
           <ListingCard
             key={reservation.id}
             data={reservation.listing}
@@ -70,7 +62,7 @@ const TripsClient = ({
             actionId={reservation.id}
             onAction={onCancel}
             disabled={deletingId === reservation.id}
-            actionLabel="Cancel reservation"
+            actionLabel="Cancel guest reservation"
             currentUser={currentUser}
           />
         ))}
@@ -79,4 +71,4 @@ const TripsClient = ({
    );
 }
  
-export default TripsClient;
+export default ReservationsClient;

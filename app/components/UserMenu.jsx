@@ -8,11 +8,14 @@ import useLoginModal from './hooks/useLoginModal'
 import useRentModal from './hooks/useRentModal'
 import { signOut } from 'next-auth/react'
 import { useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 
 
 
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
   const toggleOpen = useCallback(() => {
      setIsOpen((value) => !value);
   });
@@ -54,9 +57,9 @@ const UserMenu = () => {
                 {session?.user  ? (
                      
                      <>
-                        <MenuItem onclick={()=>{}} label='My trips'/>
-                        <MenuItem onclick={()=>{}} label='My reservation'/>
-                        <MenuItem onclick={()=>{}} label='My favorites'/>
+                        <MenuItem onClick={() => router.push('/trips')} label='My trips'/>
+                        <MenuItem onClick={() => router.push('/reservations')} label='My reservation'/>
+                        <MenuItem onClick={() => router.push('/favorites')} label='My favorites'/>
                         <MenuItem onclick={()=>{}} label='My properties'/>
                         <MenuItem onclick={rentModal.onOpen} label='My homes'/>
                         <hr/>
