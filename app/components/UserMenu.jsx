@@ -9,12 +9,16 @@ import useRentModal from './hooks/useRentModal'
 import { signOut } from 'next-auth/react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
+import ThemeBtn from '../Theme/ThemeBtn'
+
+
 
 
 
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
+
 
   const toggleOpen = useCallback(() => {
      setIsOpen((value) => !value);
@@ -47,6 +51,10 @@ const UserMenu = () => {
                  <div className="hidden md:block">
                     <Avatar/>
                  </div>
+            </div>
+
+            <div className="hidden md:block text-sm font-semibold py-2 px-4 rounded-full border  transition cursor-pointer hover:bg-neutral-100">
+                <ThemeBtn/>                 
             </div>
         </div>
        

@@ -8,6 +8,8 @@ import SearchModal from './components/modals/SearchModal'
 import RentModal from './components/modals/RentModal'
 import ToasterProvider from './providers/ToasterProvider'
 import Provider from './components/Provider'
+import ThemeProvider from './Theme/ThemeProvider'
+
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -20,7 +22,9 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
+      
       <Provider>
+      <ThemeProvider>
         <ToasterProvider/>
         <RegisterModal/>
         <LoginModal/>
@@ -28,6 +32,7 @@ export default async function RootLayout({ children }) {
         <SearchModal/>
         <Navbar/>
         {children}
+        </ThemeProvider>
        </Provider>
       </body>
     </html>
