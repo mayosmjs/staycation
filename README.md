@@ -6,6 +6,7 @@ This is a clone of Airbnb built using MongoDB and Next.js. It allows you to expl
 
 ![Home Page](Screenshots/1.png)
 ![Login Page](Screenshots/14.png)
+![DetailPage](Screenshots/2.png)
 
 ## Getting Started
 
@@ -19,9 +20,12 @@ To run this project on your local machine, follow these steps:
 
 2. Install project dependencies using either npm or yarn:
 
-npm install
-# or
-yarn install
+    ```
+        npm install
+        or
+        yarn install
+
+    ```
 
 3. Set up the necessary environment variables by creating a .env.local file in the root of the project and filling in the following configurations:
 
@@ -45,9 +49,10 @@ yarn install
 
 4. Run the development server using either npm or yarn:
 
-    npm run dev
-    # or
-    yarn dev
+   ``` npm run dev
+        or
+        yarn dev
+   ```
 
 
 5. Open your web browser and navigate to http://localhost:3000 to view the application.
@@ -61,14 +66,14 @@ yarn install
     To build the project for production:
 
     ```
-    npm run build
-    # or
-    yarn build
-  ```
+        npm run build
+        or
+        yarn build
+     ```
 
-##Contributing
+## Contributing
 
 If you would like to contribute to this project, please open an issue or create a pull request on the GitHub repository.
 
-##1License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
