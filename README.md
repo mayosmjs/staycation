@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Airbnb Clone with MongoDB and Next.js
+# Airbnb Clone with MongoDB Prisma ORM and Next.js
 
 This is a clone of Airbnb built using MongoDB and Next.js. It allows you to explore and book accommodations in various locations.
 
@@ -27,7 +27,7 @@ To run this project on your local machine, follow these steps:
 
     ```
 
-3. Set up the necessary environment variables by creating a .env.local file in the root of the project and filling in the following configurations:
+3. Set up the necessary environment variables by creating a .env local file in the root of the project and filling in the following configurations:
 
  ```
     DATABASE_URL="mongodb://your-mongodb-url-here"
