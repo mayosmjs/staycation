@@ -1,6 +1,6 @@
-import Heading from "../components/Heading";
-import Container from "../components/Container";
-import ListingCard from "../components/listings/ListingCard";
+import Heading from "@/components/Heading";
+import Container from "@/components/Container";
+import ListingCard from "@/components/listings/ListingCard";
 
 
 
@@ -16,13 +16,13 @@ const FavoritesClient = ({
         subtitle="List of places you favorited!"
       />
       </div>
-      <div 
+      <div
         className="
           mt-10
-          grid 
-          grid-cols-1 
-          sm:grid-cols-2 
-          md:grid-cols-3 
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          md:grid-cols-3
           lg:grid-cols-4
           xl:grid-cols-5
           2xl:grid-cols-6
@@ -40,5 +40,5 @@ const FavoritesClient = ({
     </Container>
    );
 }
- 
+
 export default FavoritesClient;

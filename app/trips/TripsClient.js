@@ -7,9 +7,9 @@ import { useRouter } from "next/navigation";
 
 // import { SafeReservation, SafeUser } from "@/app/types";
 
-import Heading from "../components/Heading";
-import Container from "../components/Container";
-import ListingCard from "../components/listings/ListingCard";
+import Heading from "@/components/Heading";
+import Container from "@/components/Container";
+import ListingCard from "@/components/listings/ListingCard";
 
 const TripsClient = ({
   reservations,

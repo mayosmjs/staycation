@@ -17,6 +17,7 @@ const Home = async ({ searchParams }) => {
     );
   }
 
+
   return (
     <Container>
           <div className=" pt-64 grid grid-cols-2  sm:grid-cols-2 xs:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
@@ -32,4 +33,4 @@ const Home = async ({ searchParams }) => {
   )
 }
 
-export default Home; 
+export default Home;

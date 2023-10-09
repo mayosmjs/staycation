@@ -35,3 +35,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 https://blog.logrocket.com/how-to-use-nextauth-js-client-side-authentication-next-js/
+
+
+DATABASE_URL="mongodb url here"
+NEXTAUTH_SECRET = 'xxx-xxxx-xxxx-xxxx-'
+NEXTAUTH_URL='http://localhost:3000'
+NEXT_PUBLIC_API_BASE_URL='http://localhost:3000/api'
+
+
+GITHUB_ID = 'xx-xxx-xxxx--xx'
+GITHUB_SECRET ='xxx-xxx--xxxxx-xx'
+
+GOOGLE_CLIENT_ID='xxxx-xxx-xxx-xx'
+GOOGLE_CLIENT_SECRET='xxxx-xxx-xxx-xx'
+
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME='xxxxxxx'
+CLOUDINARY_URL=xxx-xxx-xxxx
+CLOUDINARY_API='xx-xxx-xx'
+CLOUDINARY_SECRET='xxx-xxxxx'

@@ -9,8 +9,7 @@ import useRentModal from './hooks/useRentModal'
 import { signOut } from 'next-auth/react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import ThemeBtn from '../Theme/ThemeBtn'
-
+// import ThemeBtn from '../Theme/ThemeBtn'
 
 
 
@@ -53,9 +52,9 @@ const UserMenu = () => {
                  </div>
             </div>
 
-            <div className="hidden md:block text-sm font-semibold py-2 px-4 rounded-full border  transition cursor-pointer hover:bg-neutral-100">
+            {/* <div className="hidden md:block text-sm font-semibold py-2 px-4 rounded-full border  transition cursor-pointer hover:bg-neutral-100">
                 <ThemeBtn/>                 
-            </div>
+            </div> */}
         </div>
        
        {isOpen && (
@@ -65,13 +64,31 @@ const UserMenu = () => {
                 {session?.user  ? (
                      
                      <>
-                        <MenuItem onClick={() => router.push('/trips')} label='My trips'/>
-                        <MenuItem onClick={() => router.push('/reservations')} label='My reservation'/>
-                        <MenuItem onClick={() => router.push('/favorites')} label='My favorites'/>
-                        <MenuItem onclick={()=>{}} label='My properties'/>
-                        <MenuItem onclick={rentModal.onOpen} label='My homes'/>
-                        <hr/>
-                        <MenuItem onclick={()=>signOut() } label='Log out'/>
+                <MenuItem 
+                  label="My trips" 
+                  onClick={() => router.push('/trips')}
+                />
+                <MenuItem 
+                  label="My favorites" 
+                  onClick={() => router.push('/favorites')}
+                />
+                <MenuItem 
+                  label="My reservations" 
+                  onClick={() => router.push('/reservations')}
+                />
+                <MenuItem 
+                  label="My properties" 
+                  onClick={() => router.push('/properties')}
+                />
+                <MenuItem 
+                  label="Airbnb your home" 
+                  onClick={rentModal.onOpen}
+                />
+                <hr />
+                <MenuItem 
+                  label="Logout" 
+                  onClick={() => signOut()}
+                />
                      </>
 
                      ) : (

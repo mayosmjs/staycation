@@ -2,6 +2,7 @@ import prisma from "../libs/prismadb";
 
 
 export default async function getListings(params) {
+
   try {
     const {
       userId,
@@ -64,6 +65,8 @@ export default async function getListings(params) {
         }
       }
     }
+
+    
 
     const listings = await prisma.listing.findMany({
       where: query,

@@ -2,8 +2,7 @@
 
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
-import { FieldValues, useForm} from 'react-hook-form';
-import dynamic from 'next/dynamic'
+import { useForm} from 'react-hook-form';
 import { useRouter } from 'next/navigation';
 import { useMemo, useState } from "react";
 

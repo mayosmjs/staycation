@@ -8,7 +8,9 @@ import SearchModal from './components/modals/SearchModal'
 import RentModal from './components/modals/RentModal'
 import ToasterProvider from './providers/ToasterProvider'
 import Provider from './components/Provider'
-import ThemeProvider from './Theme/ThemeProvider'
+import ThemeProviders from './Theme/ThemeProvider'
+import { Suspense } from 'react'
+
 
 
 const nunito = Nunito({ subsets: ['latin'] })
@@ -18,23 +20,29 @@ export const metadata = {
   description: 'Your Number one staycation platform in the globe',
 }
 
+function SearchBarFallback() {
+  return <>placeholder</>
+}
+
 export default async function RootLayout({ children }) {
   return (
     <html lang="en">
+            {/* <ThemeProviders> */}
       <body className={nunito.className}>
-      
       <Provider>
-      <ThemeProvider>
         <ToasterProvider/>
         <RegisterModal/>
         <LoginModal/>
         <RentModal/>
-        <SearchModal/>
+        <Suspense fallback={<SearchBarFallback />}>
+           <SearchModal/>
+        </Suspense>
         <Navbar/>
         {children}
-        </ThemeProvider>
        </Provider>
       </body>
+      {/* </ThemeProviders> */}
+
     </html>
   )
 }

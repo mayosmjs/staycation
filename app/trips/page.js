@@ -1,14 +1,13 @@
 
-import EmptyState from "../components/EmptyState";
+import EmptyState from "@/components/EmptyState";
 
-import getCurrentUser from "../actions/getCurrentUser";
-import getReservations from "../actions/getReservations";
+import getCurrentUser from "@/actions/getCurrentUser";
+import getReservations from "@/actions/getReservations";
 
 import TripsClient from "./TripsClient";
 
 const TripsPage = async () => {
   const currentUser = await getCurrentUser();
-  const reservations = await getReservations(currentUser.id );
 
 
   if (!currentUser) {
@@ -20,6 +19,7 @@ const TripsPage = async () => {
     );
   }
 
+  const reservations = await getReservations({userId:currentUser?.id });
 
   if (reservations.length === 0) {
     return (

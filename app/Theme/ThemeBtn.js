@@ -1,13 +1,13 @@
 "use client"
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
-import { HiSun,HiMoon } from "react-icons/hi"
-// import useSound from "use-sound"
+import { BiSun,BiMoon } from "react-icons/bi"
+import useSound from "use-sound"
 
 const DarkModeBtn = () => {
 	const [mounted, setMounted] = useState(false)
 	const { systemTheme, theme, setTheme } = useTheme()
-	// const [play, { stop }] = useSound("./sound/bubble-sound.mp3")
+	const [play, { stop }] = useSound("./sound/bubble-sound.mp3")
 
 	useEffect(() => {
 		setMounted(true)
@@ -26,19 +26,19 @@ const DarkModeBtn = () => {
 	return (
 		<div>
 			{currentTheme === "dark" ? (
-				<HiSun
+				<BiSun
 					className="h-6 w-6 cursor-pointer text-rose-400"
 					onClick={() => {
 						setTheme("light")
-						// handlePlay()
+						handlePlay()
 					}}
 				/>
 			) : (
-				<HiMoon
+				<BiMoon
 					className="h-6 w-6 cursor-pointer text-slate-700"
 					onClick={() => {
 						setTheme("dark")
-						// handlePlay()
+						handlePlay()
 					}}
 				/>
 			)}

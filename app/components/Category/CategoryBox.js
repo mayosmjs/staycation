@@ -49,8 +49,8 @@ const CategoryBox = ({Icon,label,selected}) => {
         cursor-pointer
         focus-none
         ${selected ? 'border-b-neutral-800' : 'border-transparent'}
-        ${selected ? 'text-neutral-800' : 'text-neutral-500'}
-        ${selected ? 'text-rose-400' : 'text-neutral-500'}
+        ${selected ? 'text-black' : 'text-neutral-500'}
+        ${selected ? 'text-rose-400' : 'text-black'}
       `}
     >
       <Icon size={26} />

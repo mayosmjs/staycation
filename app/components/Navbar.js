@@ -8,6 +8,7 @@ import Categories from './Category/Categories'
 
 
 const Navbar = ( ) => {
+  
   return (
     <div className='fixed w-full bg-white z-10 shadow-sm'>
         <div className='border-b-[1px] py-4'>
@@ -21,8 +22,8 @@ const Navbar = ( ) => {
                 md:gap-0'
                 >
                  <Logo/>
-                 <Search/>
-                 <UserMenu/>
+                  <Search/>
+                  <UserMenu/>
                 </div>
             </Container>
         </div>

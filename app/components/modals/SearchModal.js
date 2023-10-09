@@ -12,16 +12,14 @@ import useSearchModal from "../../components/hooks/useSearchModal";
 import Modal from "./Modal";
 import Calendar from "../inputs/Calendar";
 import Counter from "../inputs/Counter";
-import CountrySelect, { 
-  CountrySelectValue
-} from "../inputs/CountrySelect";
+import CountrySelect, { CountrySelectValue} from "../inputs/CountrySelect";
 import Heading from '../Heading';
 
 
 const STEPS = {
     LOCATION: 0,
-  DATE :1,
-  INFO: 2,
+    DATE :1,
+    INFO: 2,
   };
 
 
