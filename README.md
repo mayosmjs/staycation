@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Airbnb Clone with MongoDB Prisma ORM and Next.js
+# Airbnb Clone with MongoDB , Prisma ORM and Next.js
 
 This is a clone of Airbnb built using MongoDB and Next.js. It allows you to explore and book accommodations in various locations.
 
