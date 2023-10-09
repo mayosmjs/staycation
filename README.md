@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This is a clone of Airbnb built using MongoDB and Next.js. It allows you to explore and book accommodations in various locations.
 
-![Home Page](Screenshots/1.png)
+![Home Page](Screenshots/110.png)
 ![Login Page](Screenshots/14.png)
 ![DetailPage](Screenshots/2.png)
 
