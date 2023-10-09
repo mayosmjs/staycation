@@ -1,56 +1,73 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Airbnb Clone with MongoDB and Next.js
+
+This is a clone of Airbnb built using MongoDB and Next.js. It allows you to explore and book accommodations in various locations.
+
+![Home Page](screenshots/home.png)
+
 ## Getting Started
 
-First, run the development server:
+To run this project on your local machine, follow these steps:
 
-```bash
-npm run dev
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/airbnb-clone.git
+   cd airbnb-clone
+
+2. Install project dependencies using either npm or yarn:
+
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-```
+yarn install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set up the necessary environment variables by creating a .env.local file in the root of the project and filling in the following configurations:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+ ```
+    DATABASE_URL="mongodb://your-mongodb-url-here"
+    NEXTAUTH_SECRET="xxx-xxxx-xxxx-xxxx-"
+    NEXTAUTH_URL="http://localhost:3000"
+    NEXT_PUBLIC_API_BASE_URL="http://localhost:3000/api"
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    GITHUB_ID="xx-xxx-xxxx--xx"
+    GITHUB_SECRET="xxx-xxx--xxxxx-xx"
 
-## Learn More
+    GOOGLE_CLIENT_ID="xxxx-xxx-xxx-xx"
+    GOOGLE_CLIENT_SECRET="xxxx-xxx-xxx-xx"
 
-To learn more about Next.js, take a look at the following resources:
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="xxxxxxx"
+    CLOUDINARY_URL="xxx-xxx-xxxx"
+    CLOUDINARY_API="xx-xxx-xx"
+    CLOUDINARY_SECRET="xxx-xxxxx"
+ ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run the development server using either npm or yarn:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-https://blog.logrocket.com/how-to-use-nextauth-js-client-side-authentication-next-js/
-
-
-DATABASE_URL="mongodb url here"
-NEXTAUTH_SECRET = 'xxx-xxxx-xxxx-xxxx-'
-NEXTAUTH_URL='http://localhost:3000'
-NEXT_PUBLIC_API_BASE_URL='http://localhost:3000/api'
+    npm run dev
+    # or
+    yarn dev
 
 
-GITHUB_ID = 'xx-xxx-xxxx--xx'
-GITHUB_SECRET ='xxx-xxx--xxxxx-xx'
+5. Open your web browser and navigate to http://localhost:3000 to view the application.
 
-GOOGLE_CLIENT_ID='xxxx-xxx-xxx-xx'
-GOOGLE_CLIENT_SECRET='xxxx-xxx-xxx-xx'
+    Usage
+    You can now explore and use the Airbnb clone by visiting http://localhost:3000 in your web browser.
 
+    Search Page
 
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME='xxxxxxx'
-CLOUDINARY_URL=xxx-xxx-xxxx
-CLOUDINARY_API='xx-xxx-xx'
-CLOUDINARY_SECRET='xxx-xxxxx'
+    Additional Commands
+    To build the project for production:
+
+    ```
+    npm run build
+    # or
+    yarn build
+  ```
+
+##Contributing
+
+If you would like to contribute to this project, please open an issue or create a pull request on the GitHub repository.
+
+##License
+This project is licensed under the MIT License. See the LICENSE file for details.
