@@ -15,7 +15,7 @@ const Navbar = ( ) => {
             <Container>
                 <div className='
                 flex
-                flex-ro
+                flex-row
                 items-center
                 justify-between
                 gap-3
