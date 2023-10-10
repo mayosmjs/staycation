@@ -9,8 +9,8 @@ const Logo = () => {
     <Image 
      priority
      onClick={()=>{router.push('/')}}
-      alt='logo' src='/images/logo/airbnb.png' className='hidden md:block cursor-pointer'
-     height={80} width={80}/>
+      alt='logo' src='/images/logo/airbnb.png' className='hidde md:block cursor-pointer'
+     height={60} width={60}/>
   )
 }
 
