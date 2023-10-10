@@ -1,5 +1,6 @@
-import prisma from "../libs/prismadb";
+import prisma from "@/libs/prismadb";
 
+export const dynamic = "force-dynamic"
 
 export default async function getListings(params) {
 

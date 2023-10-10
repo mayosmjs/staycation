@@ -4,7 +4,7 @@ import getListings from './actions/getListings'
 import ListingCard from './components/listings/ListingCard'
 import getCurrentUser from "./actions/getCurrentUser";
 
-
+export const dynamic = "force-dynamic"
 
 const Home = async ({ searchParams }) => {
   const listings = await getListings(searchParams);

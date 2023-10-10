@@ -49,7 +49,8 @@ To run this project on your local machine, follow these steps:
 
 4. Run the development server using either npm or yarn:
 
-   ``` npm run dev
+   ``` 
+        npm run dev
         or
         yarn dev
    ```
