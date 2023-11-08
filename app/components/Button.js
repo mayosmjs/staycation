@@ -1,5 +1,4 @@
 'use client'
-
 const Button = ({
   label,
   onClick,
@@ -19,6 +18,10 @@ const Button = ({
         rounded-lg
         hover:opacity-80
         transition
+        dark:bg-gray-700
+        dark:text-white
+        dark:border-gray-600
+
         w-full
         ${outline ? "bg-white" : "bg-rose-500"}
         ${outline ? "border-black" : "border-rose-500"}

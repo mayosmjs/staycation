@@ -8,10 +8,10 @@ import Categories from './Category/Categories'
 
 
 const Navbar = ( ) => {
-  
+
   return (
-    <div className='fixed w-full bg-white z-10 shadow-sm'>
-        <div className='border-b-[1px] py-4'>
+    <div className='fixed w-full z-10 shadow-sm'>
+        <div className='border-b-[1px] dark:border-gray-800  py-4'>
             <Container>
                 <div className='
                 flex

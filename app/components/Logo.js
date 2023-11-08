@@ -6,10 +6,10 @@ import { useRouter } from 'next/navigation'
 const Logo = () => {
   const router = useRouter()
   return (
-    <Image 
+    <Image
      priority
      onClick={()=>{router.push('/')}}
-      alt='logo' src='/images/logo/airbnb.png' className='hidde md:block cursor-pointer'
+     alt='logo' src='/images/logo/airbnb.png' className='hidde md:block cursor-pointer'
      height={60} width={60}/>
   )
 }
